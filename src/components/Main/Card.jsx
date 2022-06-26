@@ -4,6 +4,9 @@ import "./styles.css"
 
 
 const Card = (props) => {
+    if (!props.catalog) {
+        return null
+    }
     return (
         <>
             <div className="item__img-wrap">
