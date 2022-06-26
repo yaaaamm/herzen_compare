@@ -7,7 +7,7 @@ const Header = () => {
         <div className="header-wrapper">
             <div className="sub-header">
                 <div className="top__address">
-                   <img className="address__icon" src="./images/Vector.png" alt=""/>
+                   <img className="address__icon" src="https://charming-elf-8012bb.netlify.app/images/Vector.png" alt=""/>
                 </div>
                 <div className="address__text">
                     Балашиха, Шоссе Энтузиастов, 1А, стр. 3Б
