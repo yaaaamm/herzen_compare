@@ -1,21 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header/Header"
+import Main from "./components/Main/Main"
 
-const Card = (props) => {
-  return (
-    <div>
-     {props.text}
-    </div>
-  )
-}
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Card text={"kjbjbj"} />
-      <Card text={"ggggg"} />
+      <Main />
+     
     </div>
   );
 }
