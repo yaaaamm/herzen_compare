@@ -30,7 +30,7 @@ const Header = () => {
                     src="./images/phone.png"
                     alt="" />
                     <a class="phone__link" href="tel:+74959955871">+7 (495) 99-55-871</a>
-                    <a class="download" href="">Скачать</a>
+                    <a class="download" href="/">Скачать</a>
                 </div>
             </div>
         </div>
