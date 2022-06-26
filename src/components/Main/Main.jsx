@@ -11,7 +11,7 @@ const Main = () => {
         console.log("data")
         console.log(el, data)
         setCatalog(data)
-    })
+    }, [setCatalog])
     return (
         <main className="main">
             <Card catalog={catalog} />
