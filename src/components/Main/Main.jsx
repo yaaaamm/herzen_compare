@@ -7,10 +7,14 @@ const Main = () => {
     const [catalog, setCatalog] = useState(null)
     useEffect(() => {
         const el = document.getElementById("data")
-        const data = JSON.parse(el.getAttribute("data"))
-        console.log("data")
-        console.log(el, data)
-        setCatalog(data)
+        if (el) {
+            const data = JSON.parse(el.getAttribute("data"))
+            if (data) {
+                console.log("data")
+                console.log(el, data)
+                setCatalog(data)
+            }
+        }
     }, [setCatalog])
     return (
         <main className="main">
