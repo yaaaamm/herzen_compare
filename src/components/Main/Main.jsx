@@ -1,7 +1,8 @@
 
 import React, { useEffect, useState } from "react";
 import "./styles.css"
-import Card from "./Card"
+import Compilation from "./Compilation"
+import Table from "./Table/Table"
 
 const Main = () => {
     const [catalog, setCatalog] = useState(null)
@@ -18,7 +19,12 @@ const Main = () => {
     }, [setCatalog])
     return (
         <main className="main">
-            <Card catalog={catalog} />
+            <div className="compilation">
+                <Compilation catalog={catalog} />
+            </div>
+            <div>
+                <Table catalog={catalog} />
+            </div>
         </main>
     )
 }
