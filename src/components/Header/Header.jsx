@@ -1,5 +1,8 @@
 import React from "react";
 import "./header.css"
+//import { URL } from ""
+
+const URL = "https://charming-elf-8012bb.netlify.app"
 
 
 const Header = () => {
@@ -7,7 +10,7 @@ const Header = () => {
         <div className="header-wrapper">
             <div className="sub-header">
                 <div className="top__address">
-                   <img className="address__icon" src="https://charming-elf-8012bb.netlify.app/images/Vector.png" alt=""/>
+                   <img className="address__icon" src={`${URL}/images/Vector.png`} alt=""/>
                 </div>
                 <div className="address__text">
                     Балашиха, Шоссе Энтузиастов, 1А, стр. 3Б
