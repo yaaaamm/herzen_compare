@@ -142,7 +142,7 @@
 }
   
 .scroll-content::-webkit-scrollbar {
-    background-color: #fff;
+    background-color: #f9f9fd;
     /* opacity: 0; */
     margin-left: 5px;
     height: 7px;
@@ -154,3 +154,13 @@
     height: 10px;
     width: 10px;
   }
+  
+  /*.scroll-content::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+    margin-left: 5px;
+  }*/
+
+  .table-block .last-row {
+    border: none !important;
+}

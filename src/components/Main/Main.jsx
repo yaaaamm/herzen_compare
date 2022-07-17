@@ -3,9 +3,11 @@ import React, { useEffect, useState } from "react";
 import "./styles.css"
 import Compilation from "./Compilation"
 import Table from "./Table/Table"
+import Building from "./Building/Building"
+import Footer from "./Footer/Footer"
 
 const Main = () => {
-    const [catalog, setCatalog] = useState(null)
+    const [catalog, setCatalog] = useState([])
     useEffect(() => {
         const el = document.getElementById("data")
         if (el) {
@@ -19,12 +21,15 @@ const Main = () => {
     }, [setCatalog])
     return (
         <main className="main">
-            <div className="compilation">
-                <Compilation catalog={catalog} />
-            </div>
-            <div>
-                <Table catalog={catalog} />
-            </div>
+                <Compilation catalog={ catalog } />
+                    <Table catalog={ catalog } />
+                    {catalog.map(( key, value, index )  => { 
+                    return (
+                    <Building catalog={ key } />
+                    )
+                })
+                }
+                <Footer />
         </main>
     )
 }

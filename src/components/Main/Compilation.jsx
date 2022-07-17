@@ -9,7 +9,8 @@ const Compilation = (props) => {
     console.log(props.catalog)
     return (
         <>
-           <div className="compilation__container">
+          <div className="compilation">
+            <div className="compilation__container">
                     <div className="compilation__content">
                         <h1 class="stores__title compl__title">Подборка объектов недвижимости HERZEN</h1>
                         <div className="compl__block">
@@ -27,7 +28,7 @@ const Compilation = (props) => {
                         </div>
                     </div>
                 </div>
- 
+            </div>
         </>
     )
 }
