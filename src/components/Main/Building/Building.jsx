@@ -12,7 +12,8 @@ const Compilation = (props) => {
           <div className="objects-sec">
             <div className="objects-sec__container">
                <div className="objects-sec-top">
-                  <h2 className="object-sec-title">Объект №1 (Склад-производство, Класс А)</h2>
+                  <h2 className="object-sec-title">Объект №1  
+                  <span> (Склад-производство, Класс А)</span></h2>
                   <a href="#" className="price-select">
                      3 000₽ за м²/год
                   </a>
