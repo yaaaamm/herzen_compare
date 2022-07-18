@@ -106,7 +106,6 @@
 }
 .scroll-content {
     overflow-x: auto;
-    overflow-y: hidden;
     margin-left: auto;
     width: calc(100% - 350px);
 }
@@ -164,4 +163,13 @@
 
   .table-block .last-row {
     border: none !important;
+}
+
+@media screen and (max-width: 950px) {
+    .scroll-content {
+        overflow-x: visible;
+    }
+    .table-wrap {
+        overflow-x: auto;
+    }
 }
