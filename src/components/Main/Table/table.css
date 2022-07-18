@@ -115,7 +115,7 @@
     border-right: 1px solid #DEDEDE;
 }
 .table-block .col div {
-    max-width: 250px;
+    max-width: 280px;
 }
 
 .col .big-row {
@@ -129,7 +129,7 @@
     color: #000000;
 }
 .table-block .first-col .title-row, .table-block .first-col .table-row {
-    max-width: 320px;
+    max-width: 350px;
 }
 
 .table-block .row-green-bg {

@@ -85,7 +85,73 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+}/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #131313;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
 
 .main {
     margin-top: 10px;
@@ -259,7 +325,8 @@ video {
 .compl__title {
     text-align: center;
     max-width: none;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 /*.compl__block .item {
@@ -286,3 +353,149 @@ video {
     width: 3px;
     box-shadow: none;
   }
+    .item__name {
+        font-size: 16px;
+    }
+
+  @media screen and (max-width: 1010px) {
+    .compl__block {
+        display: block;
+    }
+  
+
+
+    .compl__block .map {
+        height: 440px;
+        display: block;
+        max-width: 100%;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .scroll-side {
+        max-width: fit-content;
+        overflow-y: visible;
+        max-height: none;
+    }
+  }
+
+@media screen and (max-width: 925px) {
+    .hor-wrap {
+        overflow-x: auto;
+    }
+    .scroll-side {
+            flex-wrap: nowrap;
+            width: fit-content !important;
+            grid-gap: 30px;
+        }
+    }
+    .compilation {
+        margin-bottom: 40px;
+    }
+    .hor-wrap::-webkit-scrollbar {
+        background-color: #fff;
+        opacity: 0;
+        margin-left: 5px;
+        height: 3px;
+    }
+    
+    .hor-wrap::-webkit-scrollbar {
+        width: 10px;
+        background-color: #f9f9fd;
+        margin-left: 5px;
+      }
+      
+      .hor-wrap::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #177263;
+        height: 2px;
+        width: 5px;
+      }
+
+        .table-sec .table-sec-top {
+            display: block;
+        }
+    .table-sec-title{
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 1235px) {
+        .compl__block .item {
+            margin: 0 auto;
+    
+            margin-bottom: 33px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .stores__title {
+            font-size: 24px;
+            line-height: 28.8px;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+        .compilation {
+            margin-bottom: 40px;
+        }
+    
+    
+        .compl__block .map-mob {
+            display: none;
+        }
+    
+        .map-mob2 {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .scroll-side {
+            flex-wrap: nowrap;
+            width: fit-content !important;
+            grid-gap: 30px;
+        }
+    
+        .compl__block .item {
+            width: 233px !important;
+        }
+    
+        .compl__block .item .item__img-wrap {
+            height: 175px;
+        }
+    
+        .hor-wrap{
+            overflow-x: auto;
+        }
+    
+        .hor-wrap::-webkit-scrollbar {
+            background-color: #fff;
+            opacity: 0;
+            margin-left: 5px;
+            height: 3px;
+        }
+        
+        .hor-wrap::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+            margin-left: 5px;
+          }
+          
+          .hor-wrap::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #177263;
+            height: 2px;
+            width: 5px;
+          }
+        
+          .logo__text{
+            display: none;
+          }
+          .logo__img{
+            padding-left: 15px;
+          }
+          .sub-header{
+            display: none;
+          }
+    }

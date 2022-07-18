@@ -162,3 +162,20 @@
     color: #D2D2D2;
     margin: 0 5px;
 }
+
+.footer__container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 991px) {
+
+    .footer__row {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .footer__col:nth-child(2){
+        margin-left: 0;
+    }
+}
+    
