@@ -106,6 +106,7 @@
 }
 .scroll-content {
     overflow-x: auto;
+    overflow-y: hidden;
     margin-left: auto;
     width: calc(100% - 350px);
 }
@@ -168,6 +169,7 @@
 @media screen and (max-width: 950px) {
     .scroll-content {
         overflow-x: visible;
+        overflow-y: unset;
     }
     .table-wrap {
         overflow-x: auto;
