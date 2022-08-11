@@ -4,7 +4,7 @@ import "./styles.css"
 import Compilation from "./Compilation"
 import Table from "./Table/Table"
 import Building from "./Building/Building"
-import Footer from "./Footer/Footer"
+import Footer from "../Footer/Footer"
 
 const Main = () => {
     const [catalog, setCatalog] = useState([])
